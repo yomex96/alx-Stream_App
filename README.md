@@ -31,4 +31,4 @@ To successfully run this code on your browser or to start the development server
 
 Contributors are
 1. Benjamin Richard 
-2. Elizabeth
+2. Elizabeth Eleojo Agada
