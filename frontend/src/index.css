@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('bg2.png');
+}
+
+.customBlinds{
+  animation: customBlinds 2s infinite linear;
+  background: linear-gradient(to right, #00053F 4%, #113065 25%, #000053 36%);
+  background-size: 1000px 100%;
+}
+
+@keyframes customBlinds {
+  0% {
+    background-position: -1000px 0;
+  }
+  100%{
+    background-position: 1000px 0;
+  }
+}
