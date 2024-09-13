@@ -24,6 +24,9 @@ To successfully run this code on your browser or to start the development server
 
     ii. npm install nodemon -D
 
+    iii. npm install bcryptjs
+
+
 7. To be able to use the import expess from 'express' in the server.js file open the package.json file and  underneath    
         "keywords": [],
         "author": "",
