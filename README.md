@@ -24,41 +24,11 @@ To successfully run this code on your browser or to start the development server
 
     ii. npm install nodemon -D
 
-    iii. npm install bcryptjs
-
-
-7. To be able to use the import expess from 'express' in the server.js file open the package.json file and  underneath    
-        "keywords": [],
-        "author": "",
-        
-        since we are using ESM not the default common JS, add 
-
-        "type": "module",
-
-8. create a script in the package.json file.
-    Uderneath the "script" 
-
-    i. replace 
-    "test": "echo \"Error: no test specified\" && exit 1"
-
-    with 
-
-    "dev": "node backend/server.js"
-
-    ii. replace
-    "main": "index.js" 
-
-    with
-
-    "main": "backend/server.js"
-
-    since the name of the name of the server file is server.js located in the 'backend' folder
-
-9.  Start the development Server:
+7.  Start the development Server:
 
         npm run dev
 
 
 Contributors are
 1. Benjamin Richard 
-2. Elizabeth Eleojo Agada
+2. Elizabeth
