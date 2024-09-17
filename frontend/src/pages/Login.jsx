@@ -5,7 +5,7 @@ import { useAuthStorage } from '../storage/authenticatedUser';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useAuthStorage();
+  const { login, isLoggingIn } = useAuthStorage();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -63,8 +63,8 @@ const Login = () => {
               />
             </div>
 
-            <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700">
-              Login
+            <button className="w-full py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700" disabled={isLoggingIn}>
+              {isLoggingIn ? "Logging in..." : "Login"}
             </button>
           </form>
           <div className="text-center text-gray-400">

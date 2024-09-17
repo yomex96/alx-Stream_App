@@ -22,6 +22,10 @@ import { protectRoute } from "./middleware/protectRoute.js";
 const app = express();
 const PORT = ENV_VARS.PORT
 
+app.get('/', (req, res) => {
+    res.send("The Server is ready.");
+});
+
 // Middleware
 // this will allow us to parse req.body
 app.use(express.json()); // Body Parser for JSON
