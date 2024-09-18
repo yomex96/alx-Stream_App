@@ -25,9 +25,9 @@ const PORT = ENV_VARS.PORT
 
 const __dirname = path.resolve();
 
-app.get('/', (req, res) => {
-    res.send("The Server is ready.");
-});
+// app.get('/', (req, res) => {
+//     res.send("The Server is ready.");
+// });
 
 // Middleware
 // this will allow us to parse req.body
@@ -57,4 +57,3 @@ app.listen(PORT, () => {
     console.log("My Server is Started at http://localhost:" + PORT);
     connectDB();
 });
-
